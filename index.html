@@ -6,75 +6,79 @@
     <title>Portafolio - Analista Programador</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#home">Gabriela Hidalgo</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">Sobre Mí</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Habilidades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">Gabriela Hidalgo D.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- La clase align-items-center alinea verticalmente los links con el botón -->
+            <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">Sobre Mí</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                
+                <!-- BOTÓN DE CV EN NAVBAR -->
+                <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                    <a href="./docs/Gabriela Hidalgo - Analista Programador.pdf" download target="_blank" class="btn btn-cv-nav">
+                        <i class="bi bi-file-earmark-arrow-down-fill me-1"></i> CV
+                    </a>
+                </li>
+            </ul>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
+    </div>
+</nav>
+    <!-- Section -->
     <section id="home" class="hero-section">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-12 text-center">
-                    <h1 class="display-4 text-white mb-4">Analista Programador Computacional</h1>
-                    <p class="lead text-white mb-4">Desarrollador Full Stack</p>
-                    <a href="#about" class="btn btn-primary btn-lg">Conoce más</a>
+    <div class="container h-100">
+        <div class="row h-100 align-items-center justify-content-center">
+            <div class="col-12 text-center">
+                <h1 class="display-4 text-white mb-3 fw-bold">Analista Programador Computacional</h1>
+                <p class="lead text-white-50 mb-4 fs-4">Full Stack Developer</p>
+                
+                <!-- GRUPO DE BOTONES (CV + CONTACTO) -->
+                <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap">
+                    <a href="./docs/Gabriela Hidalgo - Analista Programador.pdf" download target="_blank" class="btn btn-cv">
+                        <i class="bi bi-file-earmark-arrow-down-fill me-2"></i>Descargar CV
+                    </a>
+                    <a href="#contact" class="btn btn-outline-light rounded-pill px-4 py-2 fw-semibold">
+                        <i class="bi bi-envelope-fill me-2"></i>Contacto Directo
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
-
+    </div>
+</section>
     <!-- About Section -->
     <section id="about" class="py-5">
         <div class="container">
             <h2 class="text-center mb-5">Sobre Mí</h2>
             <div class="row">
                 <div class="col-lg-6">
-                    <p class="lead">
-                        Mi nombre es Gabriela Hidalgo Doris y soy Analista Programador Computacional.
+                    <p class="lead fw-normal text-dark mb-3">
+                        Profesional del área TI apasionada por el diseño e implementación de soluciones tecnológicas innovadoras, escalables y seguras.
                     </p>
- 
-                        <p>Apasionada por crear soluciones tecnológicas innovadoras. 
-                            Con un sólido dominio del inglés y experiencia en múltiples tecnologías, busco oportunidades para 
-                            aplicar mis conocimientos en proyectos desafiantes.</p>
-                    <p>
-                        Recientemente completé un curso especializado en Java con Spring Boot, ampliando mis capacidades 
-                        en el desarrollo de aplicaciones empresariales modernas.
+
+                    <!-- Párrafo descriptivo con color atenuado (text-muted) y mayor altura de línea -->
+                    <p class="text-secondary lh-lg mb-4">
+                        Con sólida experiencia en desarrollo <strong>Full Stack</strong> (PHP, Python, Java), conocimientos en <strong>Arquitectura Cloud (AWS)</strong> y dominio del idioma <strong>Inglés C1 Bilingüe</strong>, me enfoco en optimizar procesos backend y conectar la lógica de software con infraestructuras modernas en la nube.
                     </p>
                 </div>
                 <div class="col-lg-6">
-                    <div class="card">
+                    <div class="card shadow-sm">
                         <div class="card-body">
-                            <h5 class="card-title">Destacados</h5>
-                            <ul class="list-unstyled">
-                                <li><i class="bi bi-check-circle-fill text-success"></i> Desarrollo Full Stack</li>
-                                <li><i class="bi bi-check-circle-fill text-success"></i> Certificación en Spring Boot</li>
-                                <li><i class="bi bi-check-circle-fill text-success"></i> Inglés Avanzado</li>
-
+                            <h5 class="card-title mb-3">Destacados</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Desarrollo Full Stack</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Certificación en Spring Boot</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Inglés Avanzado C1</li>
                             </ul>
                         </div>
                     </div>
@@ -88,44 +92,105 @@
         <div class="container">
             <h2 class="text-center mb-5">Habilidades Técnicas</h2>
             <div class="row g-4">
+                
+                <!-- Python -->
                 <div class="col-md-4">
-                    <div class="skill-card">
-                        <i class="bi bi-filetype-py"></i>
-                        <h4>Python</h4>
+                    <div class="skill-card d-flex flex-column justify-content-center align-items-center">
+                        <i class="bi bi-filetype-py fs-1 text-primary"></i>
+                        <h4 class="mt-2">Python</h4>
                     </div>
                 </div>
+
+                <!-- Java -->
                 <div class="col-md-4">
                     <div class="skill-card">
-                        <i class="bi bi-filetype-java"></i>
-                        <h4>Java + Spring Boot</h4>
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <i class="bi bi-cup-hot fs-1 text-primary"></i>
+                                <h4 class="mt-2">Java + Spring Boot</h4>
+                                <span class="tap-hint text-muted small">Haz click</span>
+                            </div>
+                            <div class="card-back">
+                                <img src="img/certijava.png" alt="certificado Java" class="img-fluid">
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- SQL -->
+                <div class="col-md-4">
+                    <div class="skill-card d-flex flex-column justify-content-center align-items-center">
+                        <i class="bi bi-database fs-1 text-primary"></i>
+                        <h4 class="mt-2">SQL</h4>
+                    </div>
+                </div>
+
+                <!-- Git -->
                 <div class="col-md-4">
                     <div class="skill-card">
-                        <i class="bi bi-database"></i>
-                        <h4>SQL</h4>
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <i class="bi bi-git fs-1 text-primary"></i>
+                                <h4 class="mt-2">Git</h4>
+                                <span class="tap-hint text-muted small">Haz click</span>
+                            </div>
+                            <div class="card-back p-3 d-flex flex-column justify-content-center align-items-center">
+                                <h5>Perfil de GitHub</h5>
+                                <a href="https://github.com/ghidalgod?tab=repositories" target="_blank" class="btn btn-outline-primary btn-sm mt-2">
+                                    Ver Repositorios
+                                </a> <!-- Etiqueta cerrada adecuadamente -->
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- PHP -->
+                <div class="col-md-4">
+                    <div class="skill-card d-flex flex-column justify-content-center align-items-center">
+                        <i class="bi bi-filetype-php fs-1 text-primary"></i>
+                        <h4 class="mt-2">PHP</h4>
+                    </div>
+                </div>
+
+                <!-- Inglés -->
                 <div class="col-md-4">
                     <div class="skill-card">
-                        <i class="bi bi-git"></i>
-                        <h4>Git</h4>
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <i class="bi bi-translate fs-1 text-primary"></i>
+                                <h4 class="mt-2">Inglés</h4>
+                                <span class="tap-hint text-muted small">Haz click</span>
+                            </div>
+                            <div class="card-back">
+                                <img src="img/ingles.jpg" alt="certificado ingles" class="img-fluid">
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- AWS Cloud -->
                 <div class="col-md-4">
                     <div class="skill-card">
-                        <i class="bi bi-filetype-php"></i>
-                        <h4>PHP</h4>
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <i class="bi bi-cloud-arrow-up fs-1 text-primary"></i>
+                                <h4 class="mt-2">Arquitecturas AWS</h4>
+                                <span class="tap-hint text-muted small">Haz click</span>
+                            </div>
+                            <div class="card-back p-3 text-center">
+                                <p class="small text-muted mb-2">
+                                    Diseño resiliente basado en Well-Architected Framework. S3, backups, nube híbrida y SQS.
+                                </p>
+                                <a href="https://github.com/ghidalgod/portafolio/tree/main/portafolio-5-cloud" target="_blank" class="btn btn-primary btn-sm">
+                                    Ver en GitHub
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="skill-card">
-                        <i class="bi bi-translate"></i>
-                        <h4>Inglés</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+            </div> 
+        </div> 
     </section>
 
     <!-- Contact Section -->
@@ -133,37 +198,33 @@
         <div class="container">
             <h2 class="text-center mb-5">Contacto</h2>
             <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <form id="contactForm" class="contact-form">
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Nombre" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Email" required>
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" rows="5" placeholder="Mensaje" required></textarea>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary btn-lg">Enviar Mensaje</button>
-                        </div>
-                    </form>
+                <div class="col-lg-8 text-center">
+                    <p class="lead">
+                        Si deseas ponerte en contacto conmigo, puedes escribirme a través de 
+                        <a href="https://www.linkedin.com/in/gaby-hidalgo/" target="_blank" class="fw-bold text-primary text-decoration-none">
+                            LinkedIn
+                        </a>.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="bg-dark text-white py-4">
         <div class="container text-center">
-            <p>&copy; 2025 Portafolio de Gabriela Hidalgo. Todos los derechos reservados.</p>
-            <!-- Icono de LinkedIn -->
-            <a href="https://www.linkedin.com/in/gaby-hidalgo/" target="_blank" class="text-white">
-                <i class="fab fa-linkedin fa-2x"></i>
-            </a>
+            <p class="mb-3">&copy; 2026 Portafolio de Gabriela Hidalgo. Todos los derechos reservados.</p>
+            <div class="social-links d-flex justify-content-center gap-4">
+                <a href="https://www.linkedin.com/in/gaby-hidalgo/" target="_blank" class="text-white fs-3" aria-label="LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://github.com/ghidalgod/" target="_blank" class="text-white fs-3" aria-label="GitHub">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
         </div>
     </footer>
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/main.js"></script>
 </body>
