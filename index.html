@@ -1,231 +1,329 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio - Analista Programador</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Gabriela Hidalgo D. | Full Stack & AI Developer</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js"></script>
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
+
     <div class="container">
-        <a class="navbar-brand fw-bold" href="#home">Gabriela Hidalgo D.</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <!-- La clase align-items-center alinea verticalmente los links con el botón -->
-            <ul class="navbar-nav ms-auto align-items-center">
-                <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">Sobre Mí</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
-                
-                <!-- BOTÓN DE CV EN NAVBAR -->
-                <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-                    <a href="./docs/Gabriela Hidalgo - Analista Programador.pdf" download target="_blank" class="btn btn-cv-nav">
-                        <i class="bi bi-file-earmark-arrow-down-fill me-1"></i> CV
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-    <!-- Section -->
-    <section id="home" class="hero-section">
-    <div class="container h-100">
-        <div class="row h-100 align-items-center justify-content-center">
-            <div class="col-12 text-center">
-                <h1 class="display-4 text-white mb-3 fw-bold">Analista Programador Computacional</h1>
-                <p class="lead text-white-50 mb-4 fs-4">Full Stack Developer</p>
-                
-                <!-- GRUPO DE BOTONES (CV + CONTACTO) -->
-                <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap">
-                    <a href="./docs/Gabriela Hidalgo - Analista Programador.pdf" download target="_blank" class="btn btn-cv">
-                        <i class="bi bi-file-earmark-arrow-down-fill me-2"></i>Descargar CV
-                    </a>
-                    <a href="#contact" class="btn btn-outline-light rounded-pill px-4 py-2 fw-semibold">
-                        <i class="bi bi-envelope-fill me-2"></i>Contacto Directo
-                    </a>
-                </div>
+
+        <!-- SIDEBAR FIJA -->
+        <header class="sidebar">
+            <div class="sidebar-top">
+                <h1 class="name">Gabriela Hidalgo D.</h1>
+                <h2 class="role">Full Stack & AI Developer</h2>
+                <p class="tagline">Especializada en desarrollo front y back end, arquitecturas de software eficientes,
+                    integración de LLMs y soluciones en la nube.</p>
+
+                <!-- NAVEGACIÓN -->
+                <nav class="nav">
+                    <ul>
+                        <li>
+                            <a href="#about" class="nav-link active">
+                                <span class="nav-indicator"></span>
+                                <span class="nav-text">SOBRE MÍ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#skills" class="nav-link">
+                                <span class="nav-indicator"></span>
+                                <span class="nav-text">HABILIDADES</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#experience" class="nav-link">
+                                <span class="nav-indicator"></span>
+                                <span class="nav-text">EXPERIENCIA</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#highlights" class="nav-link">
+                                <span class="nav-indicator"></span>
+                                <span class="nav-text">LOGROS E IMPACTO</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </div>
-    </div>
-</section>
-    <!-- About Section -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Sobre Mí</h2>
-            <div class="row">
-                <div class="col-lg-6">
-                    <p class="lead fw-normal text-dark mb-3">
-                        Profesional del área TI apasionada por el diseño e implementación de soluciones tecnológicas innovadoras, escalables y seguras.
-                    </p>
 
-                    <!-- Párrafo descriptivo con color atenuado (text-muted) y mayor altura de línea -->
-                    <p class="text-secondary lh-lg mb-4">
-                        Con sólida experiencia en desarrollo <strong>Full Stack</strong> (PHP, Python, Java), conocimientos en <strong>Arquitectura Cloud (AWS)</strong> y dominio del idioma <strong>Inglés C1 Bilingüe</strong>, me enfoco en optimizar procesos backend y conectar la lógica de software con infraestructuras modernas en la nube.
-                    </p>
-                </div>
-                <div class="col-lg-6">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title mb-3">Destacados</h5>
-                            <ul class="list-unstyled mb-0">
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Desarrollo Full Stack</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Certificación en Spring Boot</li>
-                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Inglés Avanzado C1</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5">Habilidades Técnicas</h2>
-            <div class="row g-4">
-                
-                <!-- Python -->
-                <div class="col-md-4">
-                    <div class="skill-card d-flex flex-column justify-content-center align-items-center">
-                        <i class="bi bi-filetype-py fs-1 text-primary"></i>
-                        <h4 class="mt-2">Python</h4>
-                    </div>
-                </div>
-
-                <!-- Java -->
-                <div class="col-md-4">
-                    <div class="skill-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <i class="bi bi-cup-hot fs-1 text-primary"></i>
-                                <h4 class="mt-2">Java + Spring Boot</h4>
-                                <span class="tap-hint text-muted small">Haz click</span>
-                            </div>
-                            <div class="card-back">
-                                <img src="img/certijava.png" alt="certificado Java" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SQL -->
-                <div class="col-md-4">
-                    <div class="skill-card d-flex flex-column justify-content-center align-items-center">
-                        <i class="bi bi-database fs-1 text-primary"></i>
-                        <h4 class="mt-2">SQL</h4>
-                    </div>
-                </div>
-
-                <!-- Git -->
-                <div class="col-md-4">
-                    <div class="skill-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <i class="bi bi-git fs-1 text-primary"></i>
-                                <h4 class="mt-2">Git</h4>
-                                <span class="tap-hint text-muted small">Haz click</span>
-                            </div>
-                            <div class="card-back p-3 d-flex flex-column justify-content-center align-items-center">
-                                <h5>Perfil de GitHub</h5>
-                                <a href="https://github.com/ghidalgod?tab=repositories" target="_blank" class="btn btn-outline-primary btn-sm mt-2">
-                                    Ver Repositorios
-                                </a> <!-- Etiqueta cerrada adecuadamente -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- PHP -->
-                <div class="col-md-4">
-                    <div class="skill-card d-flex flex-column justify-content-center align-items-center">
-                        <i class="bi bi-filetype-php fs-1 text-primary"></i>
-                        <h4 class="mt-2">PHP</h4>
-                    </div>
-                </div>
-
-                <!-- Inglés -->
-                <div class="col-md-4">
-                    <div class="skill-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <i class="bi bi-translate fs-1 text-primary"></i>
-                                <h4 class="mt-2">Inglés</h4>
-                                <span class="tap-hint text-muted small">Haz click</span>
-                            </div>
-                            <div class="card-back">
-                                <img src="img/ingles.jpg" alt="certificado ingles" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- AWS Cloud -->
-                <div class="col-md-4">
-                    <div class="skill-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <i class="bi bi-cloud-arrow-up fs-1 text-primary"></i>
-                                <h4 class="mt-2">Arquitecturas AWS</h4>
-                                <span class="tap-hint text-muted small">Haz click</span>
-                            </div>
-                            <div class="card-back p-3 text-center">
-                                <p class="small text-muted mb-2">
-                                    Diseño resiliente basado en Well-Architected Framework. S3, backups, nube híbrida y SQS.
-                                </p>
-                                <a href="https://github.com/ghidalgod/portafolio/tree/main/portafolio-5-cloud" target="_blank" class="btn btn-primary btn-sm">
-                                    Ver en GitHub
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div> 
-        </div> 
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Contacto</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <p class="lead">
-                        Si deseas ponerte en contacto conmigo, puedes escribirme a través de 
-                        <a href="https://www.linkedin.com/in/gaby-hidalgo/" target="_blank" class="fw-bold text-primary text-decoration-none">
-                            LinkedIn
-                        </a>.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <p class="mb-3">&copy; 2026 Portafolio de Gabriela Hidalgo. Todos los derechos reservados.</p>
-            <div class="social-links d-flex justify-content-center gap-4">
-                <a href="https://www.linkedin.com/in/gaby-hidalgo/" target="_blank" class="text-white fs-3" aria-label="LinkedIn">
-                    <i class="bi bi-linkedin"></i>
+            <!-- BOTÓN CV Y REDES SOCIALES -->
+            <div class="sidebar-bottom">
+                <!-- BOTÓN DE DESCARGA DE CV CORREGIDO -->
+                <a href="docs/Gabriela Hidalgo - Analista Programador.pdf"
+                    download="Gabriela Hidalgo - Analista Programador.pdf" class="btn-cv">
+                    <i class="bi bi-download"></i> Descargar CV
                 </a>
-                <a href="https://github.com/ghidalgod/" target="_blank" class="text-white fs-3" aria-label="GitHub">
-                    <i class="bi bi-github"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/main.js"></script>
+
+                <div class="social-links">
+                    <!-- GitHub -->
+                    <a href="https://github.com/ghidalgod" target="_blank" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon">
+                            <path
+                                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                            <path d="M9 18c-4.51 2-5-2-7-2" />
+                        </svg>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/gaby-hidalgo/" target="_blank" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect width="4" height="12" x="2" y="9" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                    </a>
+        </header>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="main-content">
+
+            <!-- 01. SOBRE MÍ -->
+            <section id="about" class="section">
+                <h2 class="section-title">Sobre Mí</h2>
+                <p>
+                    Soy Analista Programadora y Desarrolladora Full Stack orientada a la ingeniería de software y la
+                    Inteligencia Artificial. Me destaco por mi <strong class="highlight-text">pensamiento
+                        analítico</strong>, <strong class="highlight-text">resolución lógica de problemas</strong> y una
+                    <strong class="highlight-text">comunicación técnica fluida</strong> (Bilingüe Inglés C1) que me
+                    permite colaborar eficientemente con equipos multidisciplinarios.
+                </p>
+                <p>
+                    Mi experiencia se centra en la programación limpia y estructurada con <strong
+                        class="highlight-text">Python</strong>, <strong class="highlight-text">PHP (Laravel)</strong> y
+                    <strong class="highlight-text">JavaScript/TypeScript (React)</strong>, especializándome en el diseño
+                    e integración de APIs REST/SOAP seguras bajo esquemas JWT y OAuth 2.0.
+                </p>
+                <p>
+                    Actualmente complemento el desarrollo con la preparación como <strong class="teal-text">AWS Cloud
+                        Architect</strong>, buscando desplegar aplicaciones robustas, escalables y mantenibles en
+                    producción.
+                </p>
+            </section>
+
+            <!-- 02. HABILIDADES DE PROGRAMACIÓN Y BLANDAS -->
+            <section id="skills" class="section">
+                <h2 class="section-title">Habilidades de Programación & Metodologías</h2>
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <i data-lucide="code-2"></i>
+                            <span>Lenguajes & Frameworks</span>
+                        </div>
+                        <p>Python, PHP (Laravel), JavaScript, TypeScript, React, Java, Django, HTML5, CSS3, Angular.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <i data-lucide="cpu"></i>
+                            <span>Programación de IA & LLMs</span>
+                        </div>
+                        <p>Desarrollo de chatbots con LLMs, Agentes Inteligentes, NLP (NLTK/SpaCy), Integración de APIs
+                            de IA.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <i data-lucide="cloud"></i>
+                            <span>Arquitectura & APIs</span>
+                        </div>
+                        <p>Diseño RESTful, APIs SOAP, Microservicios, JWT, OAuth 2.0, AWS (En certificación).</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <i data-lucide="database"></i>
+                            <span>Persistencia & DBs</span>
+                        </div>
+                        <p>Diseño Relacional, MySQL, Oracle SQL, PostgreSQL, Firebase, Optimización de Queries.</p>
+                    </div>
+
+                    <div class="skill-card skill-card-full">
+                        <div class="skill-header">
+                            <i data-lucide="users"></i>
+                            <span>Habilidades Blandas & Metodologías</span>
+                        </div>
+                        <p>Comunicación técnica bilingüe (C1), Análisis causa-raíz de bugs, Control de versiones
+                            (Git/GitHub), Metodologías Ágiles (Scrum/Jira), Capacitación técnica a usuarios.</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- 03. EXPERIENCIA -->
+            <section id="experience" class="section">
+                <h2 class="section-title">Experiencia en Desarrollo</h2>
+                <div class="experience-list">
+
+                    <!-- EXP 1 -->
+                    <article class="exp-item">
+                        <div class="exp-date">Jul – Oct 2025</div>
+                        <div class="exp-details">
+                            <h3>Full Stack Developer & AI Developer • Centribal</h3>
+                            <p>Diseñé e implementé la capa de servicios backend en PHP/Laravel integrando autenticación
+                                por JWT y OAuth 2.0 para proteger el 100% de los endpoints. Desarrollé la lógica de
+                                procesamiento para agentes de IA y chatbots interactivos mediante scripts en Python y
+                                modelos de lenguaje (LLMs/NLP).</p>
+                            <div class="tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">PHP</span>
+                                <span class="tag">Laravel</span>
+                                <span class="tag">REST/SOAP</span>
+                                <span class="tag">LLMs</span>
+                                <span class="tag">NLP</span>
+                                <span class="tag">JWT</span>
+                                <span class="tag">OAuth 2.0</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- EXP 2 -->
+                    <article class="exp-item">
+                        <div class="exp-date">2024 – 2025</div>
+                        <div class="exp-details">
+                            <h3>Analista de Soporte Técnico y Sistemas • Insico / Muni. Villa Alemana</h3>
+                            <p>Resolución de bugs de Nivel 2 y 3 en código fuente y bases de datos. Gestión de
+                                requerimientos de desarrollo y capacitación funcional en nuevos módulos de software.</p>
+                            <div class="tags">
+                                <span class="tag">Debug</span>
+                                <span class="tag">SQL</span>
+                                <span class="tag">Análisis de Código</span>
+                                <span class="tag">Documentación</span>
+                                <span class="tag">MTTR</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- EXP 3 -->
+                    <article class="exp-item">
+                        <div class="exp-date">2022 – 2023</div>
+                        <div class="exp-details">
+                            <h3>Full Stack Developer • AlwaysOn</h3>
+                            <p>Programé scripts en Python (Pandas/NumPy) para automatizar pipeline de ingesta masiva de
+                                datos. Refactoricé el código legacy en PHP/Laravel y React, optimizando la ejecución de
+                                queries MySQL y mejorando la respuesta del frontend.</p>
+                            <div class="tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Pandas</span>
+                                <span class="tag">Laravel</span>
+                                <span class="tag">React</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">Git</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- EXP 4 -->
+                    <article class="exp-item">
+                        <div class="exp-date">Abr – Jun 2022</div>
+                        <div class="exp-details">
+                            <h3>Analista Desarrollador • Corp. Municipal de Valparaíso</h3>
+                            <p>Desarrollo e implementación desde cero de un sistema web de agendamiento en PHP/Laravel
+                                con lógica de alertas automatizadas para gestión de plazos legales.</p>
+                            <div class="tags">
+                                <span class="tag">PHP</span>
+                                <span class="tag">Laravel</span>
+                                <span class="tag">Diseño DB</span>
+                                <span class="tag">UI/UX</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- 04. LOGROS Y NUEVOS IMPACTOS TÉCNICOS -->
+            <section id="highlights" class="section">
+                <h2 class="section-title">Logros de Programación e Impacto</h2>
+                <div class="highlights-list">
+
+                    <div class="highlight-card">
+                        <div class="highlight-header">
+                            <h3>Automatización de ETL & Data Ingestion</h3>
+                            <i data-lucide="zap"></i>
+                        </div>
+                        <p>Eliminación del 100% del procesamiento manual de datos mediante la creación de pipelines
+                            scripts en Python (Pandas/NumPy) con notificación proactiva de errores en tiempo real.</p>
+                    </div>
+
+                    <div class="highlight-card">
+                        <div class="highlight-header">
+                            <h3>Blindaje de APIs & Seguridad Backend</h3>
+                            <i data-lucide="shield-check"></i>
+                        </div>
+                        <p>Estandarización del modelo de seguridad para la capa de servicios backend con OAuth 2.0 y JWT
+                            en Laravel, logrando el 100% de protección en los endpoints de integración.</p>
+                    </div>
+
+                    <div class="highlight-card">
+                        <div class="highlight-header">
+                            <h3>Optimizaciones Causa-Raíz & Refactorización</h3>
+                            <i data-lucide="git-branch"></i>
+                        </div>
+                        <p>Refactorización de aplicaciones web PHP/React y optimización de modelos de bases de datos
+                            relacionales, eliminando cuellos de botella y reduciendo latencias en entornos de
+                            producción.</p>
+                    </div>
+
+                    <!-- PROYECTO 11 / PORTAFOLIO 5 - DIAGRAMA CLOUD -->
+                    <div class="highlight-card cloud-project-card">
+                        <div class="highlight-header">
+                            <div class="highlight-title-group">
+                                <i data-lucide="cloud-cog" class="tech-icon"></i>
+                                <h3>Proyecto AWS</h3>
+                            </div>
+                            <!-- Botón / Enlace para ver el diagrama -->
+                            <a href="https://github.com/ghidalgod/portafolio/tree/main/portafolio-5-cloud" target="_blank" class="btn-diagram"
+                                title="Ver Diagrama de Arquitectura">
+                                <i data-lucide="file-image"></i>
+                                <span>Ver Diagrama</span>
+                            </a>
+                        </div>
+                        <p>
+                            Diseño e implementación de infraestructura en la nube bajo AWS Well-Architected Framework:
+                            almacenamiento de objetos en S3, distribución con CloudFront, desacoplamiento mediante colas
+                            SQS y alta disponibilidad.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">AWS S3</span>
+                            <span class="tag">CloudFront</span>
+                            <span class="tag">SQS</span>
+                            <span class="tag">Direct Connect</span>
+                            <span class="tag">Auto Scaling</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer class="footer">
+                <p>
+                    Diseñado y desarrollado por <strong class="highlight-text">Gabriela Hidalgo D.</strong> • Enfocado
+                    en código limpio, arquitecturas escalables e Inteligencia Artificial.
+                </p>
+            </footer>
+
+        </main>
+
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
+
 </html>
